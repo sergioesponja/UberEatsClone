@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".ui.login.LoginActivity" android:theme="@style/Theme.Design.NoActionBar"
             android:label="@string/title_activity_login" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".MainActivity" android:theme="@style/Theme.Design.NoActionBar">
