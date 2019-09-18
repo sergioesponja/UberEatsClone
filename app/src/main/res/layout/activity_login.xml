@@ -28,8 +28,8 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="207dp"
-        android:layout_height="50dp"
+        android:layout_width="260dp"
+        android:layout_height="52dp"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
@@ -58,8 +58,9 @@
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
-        android:textColor="#C2BBBB"
-        android:textColorHighlight="#00ECE7E7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00BEB2B2"
         android:textColorHint="@color/GrisMuyClaro"
         android:textColorLink="#99D3ACAC"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +75,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
 
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
@@ -81,12 +83,13 @@
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:textColor="#C2BBBB"
-        android:textColorHighlight="#00ECE7E7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00BEB2B2"
         android:textColorHint="@color/GrisMuyClaro"
         android:textColorLink="#99D3ACAC"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 

@@ -25,7 +25,7 @@
 
         <EditText
             android:id="@+id/nombre"
-            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            style="@style/Base.Widget.MaterialComponents.TextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -33,14 +33,14 @@
             android:hint="@string/nombre"
             android:inputType="text"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#3B817373"
+            android:textColor="#3BD1C5C5"
             android:textColorHighlight="@color/GrisMuyClaro"
-            android:textColorHint="#B9AAAA"
-            android:textColorLink="#B97070" />
+            android:textColorHint="#6D5C5C"
+            android:textColorLink="#C0AB5D" />
 
         <EditText
             android:id="@+id/textEmail"
-            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            style="@style/Base.Widget.MaterialComponents.TextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -48,14 +48,14 @@
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#3B817373"
+            android:textColor="#3BD1C5C5"
             android:textColorHighlight="@color/GrisMuyClaro"
-            android:textColorHint="#B9AAAA"
-            android:textColorLink="#B97070" />
+            android:textColorHint="#6D5C5C"
+            android:textColorLink="#C0AB5D" />
 
         <EditText
             android:id="@+id/password"
-            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            style="@style/Base.Widget.MaterialComponents.TextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -63,10 +63,10 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#3B817373"
+            android:textColor="#3BD1C5C5"
             android:textColorHighlight="@color/GrisMuyClaro"
-            android:textColorHint="#B9AAAA"
-            android:textColorLink="#B97070" />
+            android:textColorHint="#6D5C5C"
+            android:textColorLink="#C0AB5D" />
 
         <LinearLayout
             android:layout_width="match_parent"
