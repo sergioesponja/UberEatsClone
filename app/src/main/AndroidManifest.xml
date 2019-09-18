@@ -22,7 +22,7 @@
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/Theme.Design.NoActionBar">
 
         </activity>
     </application>

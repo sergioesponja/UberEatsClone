@@ -4,43 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="339dp"
-        android:layout_height="461dp"
+        android:layout_width="290dp"
+        android:layout_height="655dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:contentDescription="@string/isologo"
+            app:srcCompat="@drawable/findeats" />
+
         <EditText
             android:id="@+id/nombre"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints="ingrese un nombre"
             android:hint="@string/nombre"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#3B817373"
+            android:textColorHighlight="@color/GrisMuyClaro"
+            android:textColorHint="#B9AAAA"
+            android:textColorLink="#B97070" />
 
         <EditText
             android:id="@+id/textEmail"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints="ingrese un correo electronico"
             android:hint="@string/email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#3B817373"
+            android:textColorHighlight="@color/GrisMuyClaro"
+            android:textColorHint="#B9AAAA"
+            android:textColorLink="#B97070" />
 
         <EditText
             android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints="ingrese una contraseña"
             android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#3B817373"
+            android:textColorHighlight="@color/GrisMuyClaro"
+            android:textColorHint="#B9AAAA"
+            android:textColorLink="#B97070" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,23 +77,23 @@
 
             <Button
                 android:id="@+id/btnSignUp"
-                style="@android:style/DeviceDefault.ButtonBar"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorAccent"
+                android:background="#A82B44"
                 android:text="@string/registrar"
                 android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
             <Button
                 android:id="@+id/btnSignIn"
-                style="@android:style/DeviceDefault.ButtonBar"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
+                android:background="#4CAF50"
                 android:text="@string/loginM"
                 android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
