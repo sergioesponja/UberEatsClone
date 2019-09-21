@@ -1,10 +1,13 @@
-package com.example.mainactivity;
+package com.example.mainactivity.ui.splashScreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.mainactivity.SignUpScreen;
+import com.example.mainactivity.R;
 
 public class WelcomeScreen extends AppCompatActivity {
 
@@ -16,10 +19,10 @@ public class WelcomeScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(WelcomeScreen.this,MainActivity.class);
+                Intent intent = new Intent(WelcomeScreen.this, SignUpScreen.class);
                 startActivity(intent);
                 finish();
             }
-        },4000);
+        },3000);
     }
 }

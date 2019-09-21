@@ -4,28 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.splashScreen.WelcomeScreen"
-    android:background="@color/colorAccent"
-    >
+    tools:context=".ui.cliente.MenuPrueba.ListaComidas">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="352dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="6dp"
-            android:contentDescription="@string/isologo"
-            app:srcCompat="@drawable/findeats"
-            android:layout_marginEnd="6dp" />
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_lista_comidas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

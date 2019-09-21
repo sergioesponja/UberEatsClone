@@ -3,18 +3,41 @@
     <string name="nombre">nombre</string>
     <string name="email">email</string>
     <string name="password">password</string>
-    <string name="registrar">SIGN UP</string>
-    <string name="loginM">LOGIN</string>
+    <string name="registrar">REGISTRARSE</string>
+    <string name="loginM">YA TENGO UNA CUENTA</string>
     <string name="cerrar_sesion">Cerrar Sesion</string>
     <string name="perfil_del_usuario">Perfil del usuario</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_login">SIGN IN</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in">INICIAR SESION</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="isologo">isologo</string>
+    <string name="title_activity_perfil_cliente">PerfilCliente</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mis_pedidos">Mis pedidos</string>
+    <string name="carrito">Carrito</string>
+    <string name="men">Menú</string>
+    <string name="button">Button</string>
+    <string name="imagen">imagen</string>
+    <string name="title_activity_navigation_drawer_cliente">NavigationDrawerActivityCliente</string>
 </resources>

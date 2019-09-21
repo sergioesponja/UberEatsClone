@@ -11,9 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mainactivity.MainActivity;
-import com.example.mainactivity.ProfileActivity;
 import com.example.mainactivity.R;
+import com.example.mainactivity.ui.cliente.MenuPrueba.ListaComidas;
+import com.example.mainactivity.ui.navigationDrawerClases.NavigationDrawerActivityCliente;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
           @Override
           public void onComplete(@NonNull Task<AuthResult> task) {
               if(task.isSuccessful()){
-                  startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                  startActivity(new Intent(LoginActivity.this, ListaComidas.class));
                   finish();
               }else{
                   Toast.makeText(LoginActivity.this,"No se pudo iniciar sesion", Toast.LENGTH_SHORT).show();
