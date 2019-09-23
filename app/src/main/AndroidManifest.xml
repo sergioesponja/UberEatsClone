@@ -13,21 +13,25 @@
         <activity
             android:name=".ui.navigationDrawerClases.NavigationDrawerActivityCliente"
             android:label="@string/title_activity_navigation_drawer_cliente"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
 
-
-        <activity android:name=".ui.cliente.MenuPrueba.ListaComidas">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+
+
 
 
         <activity
             android:name=".ui.splashScreen.WelcomeScreen"
             android:theme="@style/Theme.Design.NoActionBar">
+
+
 
         </activity>
 

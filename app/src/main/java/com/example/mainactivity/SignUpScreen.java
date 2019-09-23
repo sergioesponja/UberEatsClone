@@ -10,8 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mainactivity.ui.cliente.MenuPrueba.ListaComidas;
+
 import com.example.mainactivity.ui.login.LoginActivity;
+import com.example.mainactivity.ui.navigationDrawerClases.NavigationDrawerActivityCliente;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -138,7 +139,7 @@ public class SignUpScreen extends AppCompatActivity {
                    @Override
                    public void onComplete(@NonNull Task<Void> task2) {
                        if(task2.isSuccessful()) {
-                       startActivity(new Intent(SignUpScreen.this, ListaComidas.class));
+                       startActivity(new Intent(SignUpScreen.this, NavigationDrawerActivityCliente.class));
                        finish();
                        }else{
                            Toast.makeText(SignUpScreen.this,"No fue posible registrar los datos correctamente", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C51A54"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Clave del pedido:"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#727171"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_nombre_platillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="7dp"
+                android:padding="16dp"
+                android:text="Platillo:"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/nombre_platillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="70dp"
+                android:padding="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#727171"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_est_pedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="7dp"
+                android:padding="16dp"
+                android:text="Estatus pedido:"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/estatus_pedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="70dp"
+                android:padding="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#727171"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_est_pago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="7dp"
+                android:padding="16dp"
+                android:text="Estatus pago:"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/estatus_pago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="70dp"
+                android:padding="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#727171"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxWidth="7dp"
+                android:padding="16dp"
+                android:text="Fecha de orden:"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/fecha_orden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="70dp"
+                android:padding="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

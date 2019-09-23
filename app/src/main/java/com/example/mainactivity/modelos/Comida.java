@@ -55,14 +55,5 @@ public class Comida {
         this.ingredientes = ingredientes;
     }
 
-    @Override
-    public String toString() {
-        return "Comida{" +
-                "id=" + id +
-                ", idRestaurante=" + idRestaurante +
-                ", precio=" + precio +
-                ", nombre='" + nombre + '\'' +
-                ", ingredientes='" + ingredientes + '\'' +
-                '}';
-    }
+
 }

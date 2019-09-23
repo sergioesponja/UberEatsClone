@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.mainactivity.R;
-import com.example.mainactivity.ui.cliente.MenuPrueba.ListaComidas;
 import com.example.mainactivity.ui.navigationDrawerClases.NavigationDrawerActivityCliente;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -61,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
           @Override
           public void onComplete(@NonNull Task<AuthResult> task) {
               if(task.isSuccessful()){
-                  startActivity(new Intent(LoginActivity.this, ListaComidas.class));
+                  startActivity(new Intent(LoginActivity.this, NavigationDrawerActivityCliente.class));
                   finish();
               }else{
                   Toast.makeText(LoginActivity.this,"No se pudo iniciar sesion", Toast.LENGTH_SHORT).show();
