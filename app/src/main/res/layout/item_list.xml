@@ -115,6 +115,15 @@
             android:text="Name"
             android:visibility="invisible" />
 
+        <TextView
+            android:id="@+id/id_restaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:text="TextView"
+            android:visibility="invisible"/>
+
     </LinearLayout>
 
 

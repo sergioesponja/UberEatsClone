@@ -1,8 +1,11 @@
 package com.example.mainactivity.ui.navigationDrawerClases;
 
-import android.content.res.ColorStateList;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.mainactivity.config.Config;
+import com.example.mainactivity.modelos.adapter.ViewHolderDatos;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -21,11 +24,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
+
 import com.example.mainactivity.R;
+import com.paypal.android.sdk.payments.PayPalConfiguration;
+import com.paypal.android.sdk.payments.PayPalService;
+import com.paypal.android.sdk.payments.PaymentActivity;
+import com.paypal.android.sdk.payments.PaymentConfirmation;
 
 public class NavigationDrawerActivityCliente extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    protected static final int PAYPAL_REQUEST_CODE = 7171;
+    protected static PayPalConfiguration config = new PayPalConfiguration().environment(PayPalConfiguration.ENVIRONMENT_SANDBOX).clientId(Config.PAYPAL_CLIENT_ID);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,4 +83,41 @@ public class NavigationDrawerActivityCliente extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    protected void onDestroy() {
+     stopService(new Intent(this,PayPalService.class));
+        super.onDestroy();
+    }
+
+    protected void onActivityResult(int requestCode,int resultCode,Intent data) {
+        if(requestCode == PAYPAL_REQUEST_CODE){
+            if(resultCode == RESULT_OK){
+                PaymentConfirmation confirmation = data.getParcelableExtra(PaymentActivity.EXTRA_RESULT_CONFIRMATION);
+                if(confirmation != null){
+                    try {
+                        ViewHolderDatos.guardarDatos();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    }
+            }else if(resultCode == Activity.RESULT_CANCELED){
+                Toast.makeText(this,"Cancelada",Toast.LENGTH_SHORT).show();
+            }else if(resultCode == PaymentActivity.RESULT_EXTRAS_INVALID){
+                Toast.makeText(this,"Invalidada",Toast.LENGTH_SHORT).show();
+
+            }
+
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public static int getPaypalRequestCode() {
+        return PAYPAL_REQUEST_CODE;
+    }
+
+    public static PayPalConfiguration getConfig() {
+        return config;
+    }
+
+
 }

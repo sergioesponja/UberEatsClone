@@ -1,4 +1,4 @@
-package com.example.mainactivity;
+package com.example.mainactivity.registro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.mainactivity.R;
 import com.example.mainactivity.ui.login.LoginActivity;
 import com.example.mainactivity.ui.navigationDrawerClases.NavigationDrawerActivityCliente;
 import com.google.android.gms.tasks.OnCompleteListener;

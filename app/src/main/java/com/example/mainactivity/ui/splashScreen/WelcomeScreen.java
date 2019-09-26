@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.mainactivity.SignUpScreen;
+import com.example.mainactivity.registro.SignUpScreen;
 import com.example.mainactivity.R;
 
 public class WelcomeScreen extends AppCompatActivity {
@@ -23,6 +23,6 @@ public class WelcomeScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },3000);
+        },2500);
     }
 }

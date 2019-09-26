@@ -2,7 +2,7 @@ package com.example.mainactivity.modelos;
 
 public class Comida {
     private int id, idRestaurante, precio;
-    private String nombre, ingredientes;
+    private String nombre, ingredientes, n_restaurante;
 
     public Comida() {
     }
@@ -55,5 +55,11 @@ public class Comida {
         this.ingredientes = ingredientes;
     }
 
+    public String getN_restaurante() {
+        return n_restaurante;
+    }
 
+    public void setN_restaurante(String n_restaurante) {
+        this.n_restaurante = n_restaurante;
+    }
 }
